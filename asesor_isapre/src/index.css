@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes scroll-testimonials {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonials-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-testimonials 70s linear infinite;
+  animation-play-state: running;
+}
+
+/* Pausa la animación cuando el usuario pasa el mouse por encima */
+/* .testimonials-track:hover {
+  animation-play-state: paused;
+}
+ */
