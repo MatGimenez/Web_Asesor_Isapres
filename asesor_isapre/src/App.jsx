@@ -9,6 +9,7 @@ import HowItWorksSection from "./components/sections/HowItWorksSection";
 import TestimonialsSection from "./components/sections/TestimonialsSection";
 import FAQSection from "./components/sections/FAQSection";
 import ContactSection from "./components/sections/ContactSection";
+import IsapresSection from "./components/sections/IsapresSection";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
 
       <main className="flex-1">
         <HeroSection />
+        <IsapresSection />
         <WhyChangeSection />
         <ValuePropositionSection />
         <HowItWorksSection />

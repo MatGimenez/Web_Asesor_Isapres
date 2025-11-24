@@ -1,6 +1,7 @@
 // src/components/sections/HeroSection.jsx
 import Container from "../ui/Container";
 import Button from "../ui/Button";
+import heroImage from "../../assets/doctor-paciente-3.webp"; // Asegúrate de tener esta imagen en assets
 
 const HeroSection = () => {
   const handleScrollToContact = () => {
@@ -66,6 +67,40 @@ const HeroSection = () => {
 
         {/* Lado visual */}
         <div className="relative">
+          {/* Imagen de fondo en ámbito hospitalario */}
+          <div className="relative h-100 md:h-100 lg:h-120 overflow-hidden rounded-3xl">
+            <img
+              src={heroImage}
+              alt="Atención en salud en ámbito hospitalario"
+              className="w-full h-full object-cover"
+            />
+            {/* Capa de color para integrar con tu paleta */}
+            <div className="absolute inset-0 bg-sky-900/25 mix-blend-multiply" />
+          </div>
+
+          {/* Tarjeta flotante con el ejemplo de caso (lo que ya tenías) */}
+          <div className="absolute inset-x-4 md:inset-x-8 bottom-4">
+            <div className="bg-white rounded-2xl shadow-md border border-slate-100 p-4 md:p-5 space-y-3">
+              <p className="text-sm font-semibold text-slate-900">
+                Ejemplo de caso:
+              </p>
+              <div className="space-y-1 text-xs text-slate-600">
+                <p>• Afiliado en isapre por más de 5 años.</p>
+                <p>• Aumento sostenido del valor del plan.</p>
+                <p>• Nueva carga familiar (hijos).</p>
+              </div>
+              <div className="border-t border-slate-200 pt-3 space-y-1">
+                <p className="text-xs text-slate-500">Resultado asesoría:</p>
+                <p className="text-sm text-slate-800">
+                  Reducción del costo mensual con mejor cobertura hospitalaria,
+                  manteniendo clínica preferente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="relative">
           <div className="absolute inset-0 blur-3xl bg-sky-200/40 rounded-full -z-10" />
           <div className="bg-white rounded-2xl shadow-md border border-slate-100 p-5 space-y-4">
             <p className="text-sm font-semibold text-slate-900">
@@ -84,7 +119,7 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </Container>
     </section>
   );

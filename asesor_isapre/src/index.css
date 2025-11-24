@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 
 @keyframes scroll-testimonials {
@@ -26,3 +26,23 @@
   animation-play-state: paused;
 }
  */
+
+ @keyframes scroll-isapres {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.isapres-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-isapres 70s linear infinite;
+}
+
+/* Opcional: pausa al hacer hover */
+/* .isapres-track:hover {
+  animation-play-state: paused;
+} */
