@@ -4,14 +4,16 @@ import SectionTitle from "../ui/SectionTitle";
 
 // IMPORTA AQUÍ TUS LOGOS
 // Ajusta las rutas según donde hayas dejado las imágenes
-import isapre1 from "../../assets/Banmédica-20250525164302.webp";
-import isapre2 from "../../assets/Colmena Golden Cross-20250525164241.webp";
-import isapre3 from "../../assets/Cruz Blanca-20250525164311.webp";
-import isapre4 from "../../assets/Nueva Masvida-20250525164322.webp";
-import isapre5 from "../../assets/VidaTres-20250525164333.webp";
+import isapre1 from "../../assets/Banmédica-logo.webp";
+import isapre2 from "../../assets/Colmena Golden Cross-logo.webp";
+import isapre3 from "../../assets/Cruz Blanca-logo.webp";
+import isapre4 from "../../assets/Nueva Masvida-logo.webp";
+import isapre5 from "../../assets/VidaTres-logo.webp";
+import isapre6 from "../../assets/Consalud-logo.webp";
+import isapre7 from "../../assets/Esencial-logo.webp";
 // Agrega más imports si tienes más logos
 
-const isapreLogos = [isapre1, isapre2, isapre3, isapre4, isapre5];
+const isapreLogos = [isapre1, isapre2, isapre3, isapre4, isapre5, isapre6];
 
 const IsapresSection = () => {
   const loopLogos = [...isapreLogos, ...isapreLogos];

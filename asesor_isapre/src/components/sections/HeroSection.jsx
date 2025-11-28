@@ -59,6 +59,15 @@ const HeroSection = () => {
             </Button>
           </div>
 
+          
+          <div className="items-center gap-4 p-2 rounded-lg border-slate-200 border bg-sky-50 inline-flex">
+          <div >
+            <p className="text-sm text-sky-600 font-bold">Toma tu plan con Asesores certificados por la Superintendencia de Salud.</p>
+          </div>
+          <div className="w-25 my-2" >
+            <img src="https://www.superdesalud.gob.cl/app/themes/supersalud/assets/img/logo-supersalud-16.svg" alt="logo-superintentencia" />
+          </div> 
+          </div>
           <p className="text-xs text-slate-500">
             Respuesta en menos de 24 horas hábiles. Tus datos se usan solo para
             contactarte por esta asesoría.
@@ -68,7 +77,7 @@ const HeroSection = () => {
         {/* Lado visual */}
         <div className="relative">
           {/* Imagen de fondo en ámbito hospitalario */}
-          <div className="relative h-100 md:h-100 lg:h-120 overflow-hidden rounded-3xl">
+          <div className="relative h-100 md:h-100 lg:h-135 overflow-hidden rounded-3xl">
             <img
               src={heroImage}
               alt="Atención en salud en ámbito hospitalario"
