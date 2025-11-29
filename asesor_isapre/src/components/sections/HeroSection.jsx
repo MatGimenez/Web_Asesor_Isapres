@@ -1,7 +1,7 @@
 // src/components/sections/HeroSection.jsx
 import Container from "../ui/Container";
 import Button from "../ui/Button";
-import heroImage from "../../assets/doctor-paciente-3.webp"; // Asegúrate de tener esta imagen en assets
+import heroImage from "../../assets/doctor-paciente-3.webp";
 
 const HeroSection = () => {
   const handleScrollToContact = () => {
@@ -10,7 +10,7 @@ const HeroSection = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const phone = "569XXXXXXXX"; // Reemplaza por el número real
+    const phone = "569XXXXXXXX"; // Reemplazar por el número real
     const message = encodeURIComponent(
       "Hola, quiero evaluar mi plan de isapre."
     );
@@ -20,7 +20,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="border-b border-slate-200 bg-gradient-to-b from-sky-50/60 to-slate-50"
+      className="border-b border-slate-200 bg-gradient-to-b from-sky-50/60 to-slate-50 -mt-8 px-4 md:px-0"
     >
       <Container className="py-10 md:py-16 grid md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
@@ -34,7 +34,7 @@ const HeroSection = () => {
               Cámbiate de isapre con asesoría experta en Chile
             </h1>
             <p className="text-sm md:text-base text-slate-600">
-              Te asesoro para encontrar el mejor plan de salud según tu ingreso,
+              Te ayudamos a encontrar el mejor plan de salud según tu ingreso,
               familia y necesidades médicas. Evaluación sin costo para ti, con
               atención a todo Chile.
             </p>
@@ -46,28 +46,55 @@ const HeroSection = () => {
             <li>• Acompañamiento en todo el proceso de cambio.</li>
           </ul>
 
+          {/* CUADRO DE BENEFICIO ANUAL */}
+          <div className="rounded-2xl border border-emerald-500 bg-emerald-50 px-4 py-3 flex items-start gap-3">
+            <div className="mt-3 w-16 h-7 lg:w-11 rounded-full bg-emerald-600 text-white flex items-center justify-center text-sm font-semibold">
+              <span><i class="fa-solid fa-trophy"></i></span>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-emerald-900">
+                1 asesoría anual sin costo
+              </p>
+              <p className="text-xs text-emerald-700">
+                Al evaluarte con nosotros, todos los años tendrás una asesoría
+                totalmente gratuita para revisar si tu plan sigue siendo el más
+                conveniente.
+              </p>
+              <div className="gap-4 py-3 lg:inline-flex">
+                <div >
+                  <p className="text-sm text-emerald-900 font-semibold">Toma tu plan con Asesores certificados por la Superintendencia de Salud.</p>
+                </div>
+                <div className="w-30 my-2" >
+                  <img src="https://www.superdesalud.gob.cl/app/themes/supersalud/assets/img/logo-supersalud-16.svg" alt="logo-superintentencia" />
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-wrap items-center gap-3">
             <Button onClick={handleScrollToContact} size="lg">
-              Evaluar mi plan
+              Evaluar mi plan 
             </Button>
             <Button
-              variant="outline"
+              variant=""
               size="lg"
+              className="border-none text-slate-50 bg-green-500 hover:bg-green-600"
               onClick={handleWhatsAppClick}
             >
-              Hablar por WhatsApp
+              Hablar por WhatsApp <span className="px-2 text"><i className="fa-brands fa-whatsapp"></i></span>
             </Button>
           </div>
 
-          
-          <div className="items-center gap-4 p-2 rounded-lg border-slate-200 border bg-sky-50 inline-flex">
-          <div >
-            <p className="text-sm text-sky-600 font-bold">Toma tu plan con Asesores certificados por la Superintendencia de Salud.</p>
-          </div>
-          <div className="w-25 my-2" >
-            <img src="https://www.superdesalud.gob.cl/app/themes/supersalud/assets/img/logo-supersalud-16.svg" alt="logo-superintentencia" />
-          </div> 
-          </div>
+          {/* SUPERINTENDENCIA */}
+          {/* <div className="items-center gap-4 p-2 rounded-lg border-slate-200 border bg-sky-50 inline-flex">
+            <div >
+              <p className="text-sm text-sky-600 font-bold">Toma tu plan con Asesores certificados por la Superintendencia de Salud.</p>
+            </div>
+            <div className="w-25 my-2" >
+              <img src="https://www.superdesalud.gob.cl/app/themes/supersalud/assets/img/logo-supersalud-16.svg" alt="logo-superintentencia" />
+            </div>
+          </div> */}
+
           <p className="text-xs text-slate-500">
             Respuesta en menos de 24 horas hábiles. Tus datos se usan solo para
             contactarte por esta asesoría.
@@ -76,15 +103,15 @@ const HeroSection = () => {
 
         {/* Lado visual */}
         <div className="relative">
-          {/* Imagen de fondo en ámbito hospitalario */}
-          <div className="relative h-100 md:h-100 lg:h-135 overflow-hidden rounded-3xl">
+          {/* Imagen de fondo*/}
+          <div className="relative h-100 md:h-100 lg:h-135 overflow-hidden rounded-3xl shadow-2xl border border-slate-200">
             <img
               src={heroImage}
               alt="Atención en salud en ámbito hospitalario"
               className="w-full h-full object-cover"
             />
             {/* Capa de color para integrar con tu paleta */}
-            <div className="absolute inset-0 bg-sky-900/25 mix-blend-multiply" />
+            {/* <div className="absolute inset-0 bg-sky-900/25 mix-blend-multiply" /> */}
           </div>
 
           {/* Tarjeta flotante con el ejemplo de caso (lo que ya tenías) */}
