@@ -21,9 +21,9 @@ const IsapresSection = () => {
   return (
     <section id="isapres" className="py-12 md:py-16 bg-white">
       <Container>
-        <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-10">
+        <div className="flex flex-col xl:flex-row md:items-center gap-8 md:gap-10">
           {/* Texto (full width en mobile, 1/4 en desktop) */}
-          <div className="md:w-1/4 space-y-4">
+          <div className="xl:w-1/4 space-y-4">
             <SectionTitle
               eyebrow="Nuestras isapres"
               title="Podemos cotizar con estas isapres líderes en Chile"
