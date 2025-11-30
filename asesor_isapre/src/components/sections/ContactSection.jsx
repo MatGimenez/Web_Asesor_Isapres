@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
-    const phone = "569XXXXXXXX"; // Reemplaza por el número real
+    const phone = "5"; // Reemplaza por el número real
     const message = encodeURIComponent(
       "Hola, quiero que evalúes mi plan de isapre."
     );
