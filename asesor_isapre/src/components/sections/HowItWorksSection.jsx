@@ -4,7 +4,7 @@ import SectionTitle from "../ui/SectionTitle";
 
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="py-12 md:py-16 bg-white">
+    <section id="how-it-works" className="py-12 md:py-16 bg-slate-50">
       <Container className="space-y-8">
         <SectionTitle
           eyebrow="Proceso"
@@ -21,7 +21,7 @@ const HowItWorksSection = () => {
               Agenda tu asesoría
             </h3>
             <p>
-              Me contactas por formulario o WhatsApp y agendamos una llamada
+              Generamos el contacto por formulario o WhatsApp y agendamos una llamada
               breve para entender tu situación.
             </p>
           </li>
@@ -34,7 +34,7 @@ const HowItWorksSection = () => {
               Revisión y propuesta
             </h3>
             <p>
-              Analizo tu plan actual y preparo alternativas con diferencias
+              Analizamos tu plan actual y preparamos alternativas con diferencias
               claras en precio y cobertura.
             </p>
           </li>
@@ -47,7 +47,7 @@ const HowItWorksSection = () => {
               Cambio de plan
             </h3>
             <p>
-              Si decides avanzar, te acompaño en todo el proceso de cambio y
+              Si decides avanzar, te acompañamos en todo el proceso de cambio y
               seguimiento inicial del nuevo plan.
             </p>
           </li>

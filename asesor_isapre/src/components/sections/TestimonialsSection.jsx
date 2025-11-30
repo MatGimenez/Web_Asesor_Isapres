@@ -10,7 +10,7 @@ const testimonials = [
   },
   {
     quote:
-      "Me explicó en simple las diferencias entre planes y pude elegir con tranquilidad.",
+      "Me explicaron en simple las diferencias entre planes y pude elegir con tranquilidad.",
     name: "Rodrigo, 41 años – Viña del Mar",
   },
   {
@@ -31,11 +31,11 @@ const TestimonialsSection = () => {
 
   return (
     <section id="testimonials" className="py-12 md:py-16 bg-slate-50">
-      <Container className="space-y-8">
+      <Container className="space-y-15">
         <SectionTitle
           eyebrow="Testimonios"
           title="Personas que ya evaluaron su plan"
-          subtitle="Cuando tengas testimonios reales, solo reemplazas estos textos."
+          /* subtitle="Cuando tengas testimonios reales, solo reemplazas estos textos." */
           align="center"
         />
 

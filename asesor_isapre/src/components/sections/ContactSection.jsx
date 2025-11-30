@@ -2,6 +2,7 @@
 import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
 import Button from "../ui/Button";
+import React, { useState } from "react";
 
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
@@ -16,6 +17,8 @@ const ContactSection = () => {
     e.preventDefault();
     // Aquí conectas con Netlify Forms, API propia o servicio externo
   };
+  const [isapre, setIsapre] = useState("");
+  const [rangoIngreso, setRangoIngreso] = useState("");
 
   return (
     <section
@@ -27,7 +30,7 @@ const ContactSection = () => {
           <SectionTitle
             eyebrow="Contacto"
             title="Solicita la evaluación de tu plan"
-            subtitle="Completa el formulario o escríbeme por WhatsApp para coordinar una asesoría breve."
+            subtitle="Completa el formulario o escríbenos al WhatsApp para coordinar una asesoría breve."
             align="left"
           />
           <div className="space-y-2 text-sm text-slate-600">
@@ -59,7 +62,7 @@ const ContactSection = () => {
                 type="text"
                 name="name"
                 required
-                className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-700 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
                 placeholder="Ej: Juan Pérez"
               />
             </div>
@@ -69,9 +72,9 @@ const ContactSection = () => {
                 Edad
               </label>
               <input
-                type="age"
+                type="number"
                 name="age"
-                className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-5000"
+                className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-700 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-5000"
                 placeholder="Ej: 30"
               />
             </div>
@@ -113,7 +116,7 @@ const ContactSection = () => {
                 type="email"
                 name="email"
                 required
-                className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-700 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
                 placeholder="tu@correo.cl"
               />
             </div>
@@ -126,7 +129,7 @@ const ContactSection = () => {
                 type="tel"
                 name="phone"
                 required
-                className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-700 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
                 placeholder="+56 9 ..."
               />
             </div>
@@ -141,7 +144,10 @@ const ContactSection = () => {
               </label>
               <select name="lista_isapres" id="ls_isapre"
                 className="
-              w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-500 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-600">
+              w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-500 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-600" 
+              value={isapre} 
+              onChange={(e) => setIsapre(e.target.value)}>
+                <option value="" disabled>Selecciona tu situación</option>
                 <option value="sin-cobertura">Sin cobertura</option>
                 <option value="ls-fonasa">Fonasa</option>
                 <option value="ls-banmedica">Banmedica</option>
@@ -168,7 +174,10 @@ const ContactSection = () => {
               </label>
               <select name="rango_ingreso" id="rango_ingreso"
                 className="
-              w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-500 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-600">
+              w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-500 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-600"
+              value={rangoIngreso}
+              onChange={(e) => setRangoIngreso(e.target.value)}>
+                <option value="" disabled>Selecciona un rango</option>
                 <option value="menos-500000">Menos de $500.000</option>
                 <option value="500000-1000000">$500.000 - $1.000.000</option>
                 <option value="1000000-2000000">$1.000.000 - $2.000.000</option>
@@ -185,9 +194,9 @@ const ContactSection = () => {
                 Número de cargas familiares
               </label>
               <input
-                type="age"
-                name="age"
-                className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
+                type="number"
+                name="num_cargas"
+                className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-700 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
                 placeholder="Ej: 3"
               />
             </div>
@@ -216,7 +225,7 @@ const ContactSection = () => {
             <textarea
               name="message"
               rows={3}
-              className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
+              className="w-full rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-700 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"
               placeholder="Ej: bajar el costo, mejorar cobertura hospitalaria, maternidad, etc."
             />
           </div>
