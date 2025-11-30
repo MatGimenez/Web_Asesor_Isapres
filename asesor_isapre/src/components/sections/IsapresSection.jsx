@@ -52,9 +52,7 @@ const IsapresSection = () => {
                         w-full h-auto object-contain
                         max-h-12 md:max-h-14
                         filter
-                        opacity-70
                         transition
-                        hover:opacity-100 hover:grayscale-0
                       "
                     />
                   </div>
