@@ -4,12 +4,13 @@ import Footer from "./components/layout/Footer";
 
 import HeroSection from "./components/sections/HeroSection";
 import WhyChangeSection from "./components/sections/WhyChangeSection";
-import ValuePropositionSection from "./components/sections/ValuePropositionSection";
+/* import ValuePropositionSection from "./components/sections/ValuePropositionSection"; */
 import HowItWorksSection from "./components/sections/HowItWorksSection";
 import TestimonialsSection from "./components/sections/TestimonialsSection";
-import FAQSection from "./components/sections/FAQSection";
+/* import FAQSection from "./components/sections/FAQSection"; */
 import ContactSection from "./components/sections/ContactSection";
 import IsapresSection from "./components/sections/IsapresSection";
+import IsapresCardsSection from "./components/sections/IsapresCardsSection";
 
 function App() {
   return (
@@ -20,10 +21,11 @@ function App() {
         <HeroSection />
         <IsapresSection />
         <WhyChangeSection />
-        <ValuePropositionSection />
+        {/* <ValuePropositionSection /> */}
         <HowItWorksSection />
         <TestimonialsSection />
-        <FAQSection />
+        <IsapresCardsSection />
+        {/* <FAQSection /> */}
         <ContactSection />
       </main>
 

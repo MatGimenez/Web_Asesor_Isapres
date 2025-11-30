@@ -11,7 +11,7 @@ export const Items_Navbar = [
   },
   {
     Id: 3,
-    label: "Preguntas",
-    byId: "faq",
+    label: "Isapres",
+    byId: "isapres-cards",
   },
 ];

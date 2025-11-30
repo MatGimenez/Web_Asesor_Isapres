@@ -48,7 +48,7 @@ const HeroSection = () => {
 
           {/* CUADRO DE BENEFICIO ANUAL */}
           <div className="rounded-2xl border border-emerald-500 bg-emerald-50 px-4 py-3 flex items-start gap-3">
-            <div className="mt-3 w-16 h-7 lg:w-11 rounded-full bg-emerald-600 text-white flex items-center justify-center text-sm font-semibold">
+            <div className="mt-3 min-w-7 h-7 lg:w-11 rounded-full bg-emerald-600 text-white flex items-center justify-center text-sm font-semibold">
               <span><i class="fa-solid fa-trophy"></i></span>
             </div>
             <div>
