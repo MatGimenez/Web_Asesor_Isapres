@@ -1,7 +1,7 @@
 // src/components/sections/HeroSection.jsx
 import Container from "../ui/Container";
 import Button from "../ui/Button";
-import heroImage from "../../assets/doctor-paciente-3.webp";
+import heroImage from "../../assets/doctor-paciente-5.webp";
 
 const HeroSection = () => {
   const handleScrollToContact = () => {
@@ -49,7 +49,7 @@ const HeroSection = () => {
           {/* CUADRO DE BENEFICIO ANUAL */}
           <div className="rounded-2xl border border-emerald-500 bg-emerald-50 px-4 py-3 flex items-start gap-3">
             <div className="mt-3 min-w-7 h-7 lg:w-11 rounded-full bg-emerald-600 text-white flex items-center justify-center text-sm font-semibold">
-              <span><i class="fa-solid fa-trophy"></i></span>
+              <span><i className="fa-solid fa-trophy"></i></span>
             </div>
             <div>
               <p className="text-sm font-semibold text-emerald-900">
@@ -104,7 +104,7 @@ const HeroSection = () => {
         {/* Lado visual */}
         <div className="relative">
           {/* Imagen de fondo*/}
-          <div className="relative h-100 md:h-100 lg:h-135 overflow-hidden rounded-3xl shadow-2xl border border-slate-200">
+          <div className="relative h-130 md:h-100 lg:h-135 overflow-hidden rounded-3xl shadow-2xl border border-slate-200">
             <img
               src={heroImage}
               alt="Atención en salud en ámbito hospitalario"

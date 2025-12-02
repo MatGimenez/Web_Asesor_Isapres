@@ -39,7 +39,7 @@
 .isapres-track {
   display: flex;
   width: max-content;
-  animation: scroll-isapres 70s linear infinite;
+  animation: scroll-isapres 55s linear infinite;
 }
 
 /* Opcional: pausa al hacer hover */

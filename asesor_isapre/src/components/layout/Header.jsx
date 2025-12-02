@@ -29,7 +29,7 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-6 text-sm">
           { items.map((item) => (
             <button
-              key={item.id}
+              key={item.Id}
               onClick={() => document.getElementById(item.byId)?.scrollIntoView({ behavior: "smooth" })} className="text-slate-600 hover:text-sky-700">{item.label}</button>))
           }
           {/* <button
